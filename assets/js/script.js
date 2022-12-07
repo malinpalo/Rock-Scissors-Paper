@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		button.addEventListener("click", function () {
 			let playerChoice = this.getAttribute("data-choice");
 			theGame(playerChoice);
-            start.addEventListerner('click', startGame)
+            
 		});
-		
+        start.addEventListerner('click', startGame);
+        
 
 	}
 });
