@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		button.addEventListener("click", function () {
 			let playerChoice = this.getAttribute("data-choice");
 			theGame(playerChoice);
+            start.addEventListerner('click', startGame)
 		});
-		start.addEventListerner('click', startGame)
+		
 
 	}
 });
@@ -74,6 +75,16 @@ function playerWin() {
 	}
 }
 
+/** Function for when the start button is beeing clicked*/
+function startGame () {
+    document.getElementById('welcome-box').style.display = "none";
+	start.style.display = "none";
+	rock.style.display = "flex";
+	scissors.style.display = "flex";
+	paper.style.display = "flex";
+	document.getElementById('info').innerHTML = "Choose a weapon!";
+}
+
 /** Function that increments the score by one for the computer and resets the score to zero if the restart button is clicked */
 
 function compWin() {
@@ -105,4 +116,5 @@ function lostGame () {
 function draw () {
     document.getElementById("winLose").innerHTML = '';
 }
+
 
