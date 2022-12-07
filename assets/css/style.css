@@ -21,7 +21,49 @@ body {
 
 /*Sets the header style*/
 header {
+    display: flex;
     min-height: 15vh;
+    justify-content: center;
     align-items: center;
 }
 
+header h1 {
+    font-size: 3rem;
+}
+
+/*Sets style to Welcome page*/
+.welcome {
+    background: url(../images/background/background.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.8s ease;
+}
+.welcome h2 {
+    font-size: 3rem;
+    padding: 2rem;
+    margin: 5rem;
+}
+
+.welcome ul {
+    font-size: 2rem;
+    padding: 5rem;
+    
+}
+
+.welcome button {
+    width: 12rem;
+    height: 6rem;
+    background: none;
+    border: none;   
+    color: #FFE91F;
+    font-size: 3rem;
+    background: #B534D2;
+    border-radius: 0.5rem;
+    cursor: pointer;   
+}
