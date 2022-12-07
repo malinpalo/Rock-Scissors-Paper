@@ -4,8 +4,8 @@ const start = document.getElementById('start')
 let rock = document.getElementById('r');
 let scissors = document.getElementById('s');
 let paper = document.getElementById('p');
-const boxWin = document.getElementById('win-box');
-const boxLose = document.getElementById('lose-box');
+const boxWin = document.getElementById('box-win');
+const boxLose = document.getElementById('box-lose');
 const restart = document.getElementById('restart');
 
 /**Event listener for the player buttons */
@@ -17,9 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			theGame(playerChoice);
             
 		});
-        start.addEventListerner('click', startGame);
-        
-
+        start.addEventListener('click', startGame);
 	}
 });
 
@@ -29,7 +27,7 @@ function computerRandomChoice() {
 	let randomNr = Math.floor(Math.random() * options.length);
 	return options[randomNr];
 }
-/**The Game, a function for the computers and players possible outcomes*/
+/**The Game, a function for the computers and players choices andpossible outcomes*/
 function theGame(playerChoice) {
 	let compChoice = computerRandomChoice();
 	if (compChoice === 'rock' && playerChoice === 'paper') {
@@ -78,6 +76,7 @@ function playerWin() {
 
 /** Function for when the start button is beeing clicked*/
 function startGame () {
+	
     document.getElementById('welcome-box').style.display = "none";
 	start.style.display = "none";
 	rock.style.display = "flex";
@@ -104,18 +103,18 @@ function compWin() {
 
 /**Function that leaves a message if the player wins*/
 function winningGame () {
-    document.getElementById("winLose").innerHTML = '';
+    document.getElementById("win-lose").innerHTML = '';
     document.getElementById("info").innerHTML = '';
 }
 /**Function that leaves a message if the player lose*/
 function lostGame () {
-    document.getElementById("winLose").innerHTML = '';
+    document.getElementById("win-lose").innerHTML = '';
     document.getElementById("info").innerHTML = '';
 }
 
 /**Function that leaves a message if It's a draw*/
 function draw () {
-    document.getElementById("winLose").innerHTML = '';
+    document.getElementById("win-lose").innerHTML = '';
 }
 
 /**Function to restart game */
