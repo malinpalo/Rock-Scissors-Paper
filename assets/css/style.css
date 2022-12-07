@@ -43,7 +43,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     transition: opacity 0.8s ease;
-    opacity: 0;
+    display: none;
 }
 .welcome h2 {
     font-size: 3rem;
@@ -57,17 +57,7 @@ header h1 {
     
 }
 
-.welcome button {
-    width: 12rem;
-    height: 6rem;
-    background: none;
-    border: none;   
-    color: #FFE91F;
-    font-size: 3rem;
-    background: #B534D2;
-    border-radius: 0.5rem;
-    cursor: pointer;   
-}
+
 /*Sets style to game-area*/
 .game-area {
     width: 100%;
@@ -176,6 +166,20 @@ header h1 {
     margin-left: 10px;
     display: none;
 
+}
+
+/*Styles the button that starts the game*/
+#start {
+    display: none;
+    width: 18rem;
+    height: 8rem;
+    background: none;
+    border: none;
+    color: #FFE91F;
+    font-size: 3rem;
+    background: #B534D2;
+    border-radius: 0.5rem;
+    margin: 0 auto;
 }
 
 /*Styles the button that restarts the game*/
