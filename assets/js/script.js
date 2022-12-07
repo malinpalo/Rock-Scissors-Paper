@@ -65,7 +65,7 @@ function playerWin() {
 	document.getElementById("player-score").innerText = ++playerScore;
 	document.getElementById("info").innerHTML = ' YEAY,You win!';
 	if (playerScore == 5) {
-		winGame();
+		winningGame();
 		rock.style.display = "none";
 		scissors.style.display = "none";
 		paper.style.display = "none";
@@ -81,7 +81,7 @@ function compWin() {
 	document.getElementById("comp-score").innerText = ++compScore;
 	document.getElementById("info").innerHTML = 'Buuhu, You Lose!';
 	if (playerScore == 5) {
-		gameOver();
+		lostGame();
 		rock.style.display = "none";
 		scissors.style.display = "none";
 		paper.style.display = "none";
@@ -89,3 +89,20 @@ function compWin() {
 		restart.style.display = "flex";
 	}
 }
+
+/**Function that leaves a message if the player wins*/
+function winningGame () {
+    document.getElementById("winLose").innerHTML = '';
+    document.getElementById("info").innerHTML = '';
+}
+/**Function that leaves a message if the player lose*/
+function lostGame () {
+    document.getElementById("winLose").innerHTML = '';
+    document.getElementById("info").innerHTML = '';
+}
+
+/**Function that leaves a message if It's a draw*/
+function draw () {
+    document.getElementById("winLose").innerHTML = '';
+}
+
