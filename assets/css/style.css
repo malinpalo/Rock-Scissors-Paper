@@ -43,6 +43,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     transition: opacity 0.8s ease;
+    opacity: 0;
 }
 .welcome h2 {
     font-size: 3rem;
@@ -66,4 +67,43 @@ header h1 {
     background: #B534D2;
     border-radius: 0.5rem;
     cursor: pointer;   
+}
+/*Sets style to game-area*/
+.game-area {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.8s;
+}
+#score-box {
+    border: 6px solid #FFE91F;
+    border-radius: 1rem;
+    color: #FFE91F;
+    background-color: #B534D2;
+    text-align: center;
+    width: 20rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.score {
+    margin: 1rem;
+    border: 3px solid #FFE91F;
+    border-radius: 9px;
+    font-size: 2rem;
+    padding: 2px 10px;
+}
+#image-box {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    height: 200px;
+    justify-content: center;
+
+}
+#image-box img {
+    height: 150px;
 }
