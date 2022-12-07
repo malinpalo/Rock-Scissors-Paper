@@ -6,6 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     cursor: pointer;
+    font-family: 'Russo One', sans-serif;
+    color: #FFE91F;
 }
 
 /*Sets the background style*/
@@ -15,8 +17,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
+
+/*Sets the header style*/
+header {
+    min-height: 15vh;
+    align-items: center;
+}
+
