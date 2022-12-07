@@ -157,8 +157,33 @@ header h1 {
         background-color:#333234;
         transform: scale(1.1);
     }
-    
+
 #image-box >img {
     height: 150px;
 }
 
+/*Styles the button that restarts the game*/
+#restart-box {
+    height: 350px;
+    width: 200px;
+    margin: auto;
+    margin-top: -150px;
+    padding-bottom: 5px;
+}
+
+#restart {
+    display: none;
+    width: 18rem;
+    height: 8rem;
+    background: none;
+    border: none;
+    color: #FFE91F;
+    font-size: 3rem;
+    background: #B534D2;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    
+}
+#restart:hover {
+    transform: scale(1.1);
+}
