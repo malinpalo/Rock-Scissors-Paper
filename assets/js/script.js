@@ -117,4 +117,16 @@ function draw () {
     document.getElementById("winLose").innerHTML = '';
 }
 
-
+/**Function to restart game */
+document.getElementById('restart').addEventListener("click",function() {
+    document.getElementById('box-win').style.display = "none";
+    document.getElementById('box-lose').style.display = "none";
+    rock.style.display = "flex";
+	scissors.style.display = "flex";
+	paper.style.display = "flex";
+    document.getElementById('info').innerHTML = "Choose your weapon!";
+    document.getElementById('comp-score').innerText = 0;
+    document.getElementById('player-score').innerText = 0;
+    document.getElementById('restart').style.display = 'none';
+ 
+});

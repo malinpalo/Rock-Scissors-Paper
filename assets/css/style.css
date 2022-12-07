@@ -59,7 +59,7 @@ header h1 {
 
 
 /*Sets style to game-area*/
-.game-area {
+#game-area {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -167,6 +167,7 @@ header h1 {
     display: none;
 
 }
+
 
 /*Styles the button that starts the game*/
 #start {

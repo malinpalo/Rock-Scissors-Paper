@@ -15,30 +15,31 @@
 </head>
 <body>
     <header>
-        <h1>Rock your Rock, Scissors or Paper to Win!</h1>
+        <h1>Rock, Scissors or Paper!</h1>
     </header>
-    <!--First welcome page with rules and a start play button-->
-    <section class="game-area">
+    <section>
+        <div id="game-area">
+            <h2>Lets Play!</h2>
+        </div>
       <!--Score-box for player and computer.-->
-      <div id="score-box">
-        <div class="comp">
-            <h3 class="score">Computer: <span id="comp-score">0</span></h3>
-        </div>
-        <div class="player">
+        <div id="score-box">
+            <div class="comp">
+                <h3 class="score">Computer: <span id="comp-score">0</span></h3>
+            </div>
+            <div class="player">
             <h3 class="score">player: <span id="player-score">0</span></h3>
+            </div>
         </div>
-      </div>
     </section>
-<section>
+    <section>
     <div id="image-box">
         <div class="welcome" id="welcome-box">
-            <h2>How to play</h2>
+            <h2 id="welcome-title">How to play</h2>
             <ul>
-                <li>Press Play to enter the Game Area</li>
-                <li>Chose your hand by clicking one of the Icons to see if you beet the computer?</li>
-                <li>Rock Crushes scissors - Scissors Cuts Paper - Paper Covers rock</li>
+                <ol>Press Play to enter the Game Area</li>
+                <ol>Chose your hand by clicking one of the Icons to see if you beet the computer?</li>
+                <ol>Rock Crushes scissors - Scissors Cuts Paper - Paper Covers rock</li>
             </ul>
-        <div><button aria-label="Start game" id="start">START</button></div>
         </div>
         <!--Greeting if the user wins the game-->
         <div class="greeting-box" id="box-win">
@@ -49,30 +50,31 @@
         <p>Oups, you lost!</p>
         <p id=lose-song></p>
         </div>
-        <!--Result that says if the player won or lost-->
-        <div id="win-lose"></div>
-        <!--Informs the player of what the computer played-->
-        <div id="info"></div>
-        
         <!--Buttons for player to play the game-->
         <div id="r">
         <button aria-label="rock" class="options" data-choice="rock"><img src="assets/images/Rock.webp"
                 alt="rock"></button>
         </div>
         <div id="s">
-        <button aria-label="scissors" class="options" data-choice="scissors"><img src="assets/images/Scissor.webp"
+            <button aria-label="scissors" class="options" data-choice="scissors"><img src="assets/images/Scissor.webp"
                 alt="scissors"></button>
         </div>
         <div id="p">
-        <button aria-label="paper" class="options" data-choice="paper"><img src="assets/images/paper.webp"
+            <button aria-label="paper" class="options" data-choice="paper"><img src="assets/images/paper.webp"
                 alt="paper"></button>
         </div>
     </div>
+    <!--Result that says if the player won or lost-->
+    <div id="win-lose"></div>
+    <!--Informs the player of what the computer played-->
+    <div id="info"></div>
+    <!--This is the button to play the game-->
+    <div id="start-box">
+    <div><button aria-label="Start game" id="start">START</button></div>
+    </div>
     <!--The button that restarts the game-->
-    <div id="button-box"></div>
-</div>
     <div id="restart-box">
-    <div><button aria-label="Play again?" id="restart">Play-again?</button></div>
+    <div><button aria-label="Play again" id="restart">Play-again?</button></div>
     </div>
 </section>
 <!--File path to JavaScript-->
