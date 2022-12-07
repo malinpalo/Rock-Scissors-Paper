@@ -1,5 +1,6 @@
 //**Declaring global variables to manipulate the DOM */
 const btns = document.getElementsByTagName('button');
+const start = document.getElementById('start')
 let rock = document.getElementById('r');
 let scissors = document.getElementById('s');
 let paper = document.getElementById('p');
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			let playerChoice = this.getAttribute("data-choice");
 			theGame(playerChoice);
 		});
-		
+		start.addEventListerner('click', startGame)
 
 	}
 });
@@ -55,5 +56,36 @@ function theGame(playerChoice) {
 	} else if (compChoice === playerChoice) {
 		document.getElementById('info').innerHTML = "Ohh, Its a draw!";
 		drawGame();
+	}
+}
+/** Function that increments the score by one for the player and resets the score to zero if the restart button is clicked */
+
+function playerWin() {
+	let playerScore = parseInt(document.getElementById("player-score").innerText);
+	document.getElementById("player-score").innerText = ++playerScore;
+	document.getElementById("info").innerHTML = ' YEAY,You win!';
+	if (playerScore == 5) {
+		winGame();
+		rock.style.display = "none";
+		scissors.style.display = "none";
+		paper.style.display = "none";
+		boxWin.style.display = "flex";
+		restart.style.display = "flex";
+	}
+}
+
+/** Function that increments the score by one for the computer and resets the score to zero if the restart button is clicked */
+
+function compWin() {
+	let compScore = parseInt(document.getElementById("comp-score").innerText);
+	document.getElementById("comp-score").innerText = ++compScore;
+	document.getElementById("info").innerHTML = 'Buuhu, You Lose!';
+	if (playerScore == 5) {
+		gameOver();
+		rock.style.display = "none";
+		scissors.style.display = "none";
+		paper.style.display = "none";
+		boxLose.style.display = "flex";
+		restart.style.display = "flex";
 	}
 }
