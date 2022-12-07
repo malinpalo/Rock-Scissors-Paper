@@ -162,6 +162,22 @@ header h1 {
     height: 150px;
 }
 
+#r {
+    margin-right: 10px;
+    display: none;
+}
+
+#p {
+    display: none;
+
+}
+
+#s {
+    margin-left: 10px;
+    display: none;
+
+}
+
 /*Styles the button that restarts the game*/
 #restart-box {
     height: 350px;
