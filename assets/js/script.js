@@ -57,7 +57,7 @@ function theGame(playerChoice) {
 function playerWin() {
 	let playerScore = parseInt(document.getElementById("player-score").innerText);
 	document.getElementById("player-score").innerText = ++playerScore;
-	document.getElementById("info").innerHTML = ' YEAY,You win!';
+	document.getElementById("info").innerHTML = ' YEAY, You win!';
 	if (playerScore == 5) {
 		winningGame();
 		rock.style.display = "none";
