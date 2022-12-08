@@ -29,6 +29,7 @@ function computerRandomChoice() {
 }
 /**The Game, a function for the computers and players choices andpossible outcomes*/
 function theGame(playerChoice) {
+	
 	let compChoice = computerRandomChoice();
 	if (compChoice === 'rock' && playerChoice === 'paper') {
 		document.getElementById('info').innerHTML = "You coose paper & Computer choose rock!";
@@ -55,7 +56,7 @@ function theGame(playerChoice) {
 		compWin();
 	} else if (compChoice === playerChoice) {
 		document.getElementById('info').innerHTML = "Ohh, Its a draw!";
-		drawGame();
+		draw();
 	}
 }
 /** Function that increments the score by one for the player and resets the score to zero if the restart button is clicked */
@@ -74,6 +75,21 @@ function playerWin() {
 	}
 }
 
+/** Function that increments the score by one for the computer and resets the score to zero if the restart button is clicked */
+
+function compWin() {
+	let compScore = parseInt(document.getElementById("comp-score").innerText);
+	document.getElementById("comp-score").innerText = ++compScore;
+	document.getElementById("info").innerHTML = 'Buuhu, You Lose!';
+	if (compScore== 5) {
+		lostGame();
+		rock.style.display = "none";
+		scissors.style.display = "none";
+		paper.style.display = "none";
+		boxLose.style.display = "flex";
+		restart.style.display = "flex";
+	}
+}
 /** Function for when the start button is beeing clicked*/
 function startGame () {
 	
@@ -83,22 +99,6 @@ function startGame () {
 	scissors.style.display = "flex";
 	paper.style.display = "flex";
 	document.getElementById('info').innerHTML = "Choose a weapon!";
-}
-
-/** Function that increments the score by one for the computer and resets the score to zero if the restart button is clicked */
-
-function compWin() {
-	let compScore = parseInt(document.getElementById("comp-score").innerText);
-	document.getElementById("comp-score").innerText = ++compScore;
-	document.getElementById("info").innerHTML = 'Buuhu, You Lose!';
-	if (playerScore == 5) {
-		lostGame();
-		rock.style.display = "none";
-		scissors.style.display = "none";
-		paper.style.display = "none";
-		boxLose.style.display = "flex";
-		restart.style.display = "flex";
-	}
 }
 
 /**Function that leaves a message if the player wins*/

@@ -153,12 +153,13 @@ ul {
 
 /*Sets style to score-box*/
 #score-box {
+    display: none;
     border: 6px solid #FFE91F;
     border-radius: 1rem;
     color: #FFE91F;
     background-color: #B534D2;
     text-align: center;
-    width: 20rem;
+    width: 27rem;
     margin: 0 auto;
     padding: 1rem;
     font-size: 2rem;
