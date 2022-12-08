@@ -83,11 +83,10 @@ header {
     border: 5px solid #FFE91F;
     border-radius: 0.5rem;
 }
-ul {
-    margin: 1rem 1rem
-}
-.welcome-box, li {
-    list-style-type: none;
+#welcome-text {
+    font: 1rem;
+    text-align: justify;
+    padding: 0.5rem;
 }
 
 /*Sets style to the lose message that apperes if the player lose*/
@@ -116,13 +115,6 @@ ul {
 
 #box-win >p {
     font-size: 5rem;
-}
-
-
-/* style to list in the opening page*/
-ul {
-    list-style-position: inside;
-    margin-bottom: 40px;
 }
 
 /*Sets style to score-box*/
