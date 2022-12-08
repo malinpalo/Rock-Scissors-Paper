@@ -22,7 +22,8 @@ body {
 /*Sets the header style*/
 header {
     display: flex;
-    padding-top: 2rem;
+    margin-bottom: 10rem;
+    padding: 2rem;
     justify-content: center;
     align-items: center;
 }
@@ -33,13 +34,6 @@ header h1 {
 
 section h2 {
 
-}
-
-/*Sets style to game-area*/
-#game-area {
-   height:10px;
-   margin-top: 100px;
-   background-color: aqua;
 }
 /*Styles the main buttons of the game*/
 
@@ -76,10 +70,10 @@ section h2 {
     width: 600px;
     height: 425;
 }
-.welcome-box >ul {
-    margin-top: 50px;
-}
 
+#welcome-title {
+    font-size: 2rem;
+}
 .options {
     padding-top: 20px;
     background-color: #05258f;
@@ -154,14 +148,14 @@ ul {
 /*Sets style to score-box*/
 #score-box {
     display: none;
+    flex-direction: column;
+    align-items: center;
     border: 6px solid #FFE91F;
     border-radius: 1rem;
-    color: #FFE91F;
     background-color: #B534D2;
-    text-align: center;
-    width: 27rem;
+    width: 21rem;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 2rem;
 }
 .score {
