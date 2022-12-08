@@ -1,15 +1,16 @@
 # Rock Paper Scissors
 
-Play the classic game rock scissors and paper. A wellknown game, played all over the world. 
-This website was designed and developed as a game that can be enjoyed by people of all ages. You play against the computer, the goal is to get the highest score after 10 moves.
+Play a well known game, rock, paper,scissor. A game played all over the world. 
+This website was designed and developed as a game that can be enjoyed by players in all ages. The player plays against the computer, highest score after 5 rounds wins.
 ![all devices](./assets/images/responsive.png)
 [Live link to the Website](https://malinpalo.github.io/Rock-Scissors-Paper/)
 
 # Table of Contents
 1. [User experience](#id-User-experience)
 2. [Features](#id-features)
+    * [The welcome page](#id=-welcome)
     * [Header and Title](#id-header)
-    * [Scores](#id-scores)
+    * [Scoreboard](#id-scores)
     * [Game area](#id-game-area)
     * [Game](#id-game)
     * [Winner text for each round](#id-winner)
@@ -46,57 +47,76 @@ This website was designed and developed as a game that can be enjoyed by people 
 
 
 # Features<div id='id-features'>
+* ### The welcome page <div id='id-welcome'>
+When the user opens the webpage, the user encounters an colorful welcome box with rules of how to play the game. The welcome page with it's bright colors appears like a cool and fun, eye catching page that makes the player wanna try the game. 
+
+![the welcome page](./assets/images/welcomepage.png)
+
 * ### The Header and Title<div id='id-header'>
-When the user opens the webpage, the website color is the first thing that will catch their attention. It's colorful and feels like a fun game! The headline that says "Let's play" hopefully makes the player feel welcome and can't wait to face the computer in an exciting match.
+The header is in a bright yellow color that stands out from the rest of the game so that the player doesn't forget what they are playing.
 
 ![header and title](./assets/images/theheaderandtitel.png)
 
-* ### Scores<div id='id-scores'>
-This area is where the computer and users scores are displayed. To win the game it's about getting the highest score after 10 moves.
+* ### Scoreboard<div id='id-scores'>
+The scoreboard is where the computer and users scores are displayed. The goal is to get the hightest score in 5 moves.
+
 ![scores](./assets/images/scoreboard.png)
 
 * ### Game area<div id='id-game-area'>
-The game area is the area where you see the entire game. There is a text to show where you pick your move to easily see how you start playing. It also shows how many moves that are left before the round ends. After each choise you make, a text is shown how each move went and after 10 rounds you see who wins the game. When the game is finished a text shows who won and a restart button appears to easily play the game again.
+The game area is the area where you see the entire game. There is a text reminding the player to chose a hand. After each choise the user make a text is shown with the information on who won or lost.
+When the game is finished the buttons dissapeare, a text appares with information of if the user won or lost and a restart button appears to offer the user another round.
+
 ![game area](./assets/images/gamearea.png)
 
 
 * ### Game<div id='id-game'> 
-The game is where the player challenges the computer. There are three choices for both to make, rock, paper or scissors. The player starts to choose, then it's the computer's turn, which is completely random. Below the buttons it's shown who is beating the other in each round while the score increases for each participant after each move.
+The game is where the user challenges the computer. There are three choices for both to make, rock, paper or scissors. The user choose first by clicking one of the buttons made out of icons, then it's the computer's turn. The computers choice is completely random. Below the buttons a test is shown informing the user if they won or lost. The score increases for each participant after each move.
+
 ![game](./assets/images/gameboard.png)
 
 * ### Winner text for each round<div id='id-winner'>
+The text that appeares under the buttons after each round if the user wins.
+
 ![winning](./assets/images/winner-text.png)
 
 * ### Losing text for each round<div id='id-loser'>
+The text that appeares under the buttons after each round if the user lose.
+
 ![losing](./assets/images/lose-text.png)
 
 * ### Winning Text<div id='id-win'>
-The user who defeats the computer is notified by a text that they have won the game. This is when the game is over after ten rounds and the user can restart the game again. This is good for the user, as they are informed that the game is over and will not continue.
-![winning](./assets/images/winning.png)
+If the user defeats the computer the user gets notified by a text that says that they have won the game. The buttons dissapeare, the text appeares together with a reset button wich gives the user a clear notification that the game is over.
+
+![winning](./assets/images/win.png)
 
 * ### Losing Text<div id='id-lose'>
-When the computer wins the users are notified with a text that they have lost the game. This is when the game is over after ten rounds and the user can restart the game again. This is good for the user, as they are informed that they have lost and the game will not continue.
-![losing](./assets/images/losing.png)
+If the user defeats the computer the user gets notified by a text that says that they have won the game. The buttons dissapeare, the text appeares together with a reset button wich gives the user a clear notification that the game is over.
+
+![losing](./assets/images/lost.png)
 
 * ### Restart button<div id='id-restart'>
-When the game is over, a button appears where the player can choose to restart the game. The game is restarted when the button is clicked and the score and remaining moves are reset.
+When the game is over a bright colorful restart button appeares with a text asking the player to Play again? The button is clicked the game restarts. The score resets and the buttons appeares. The restart button is design with the intention to make the user wanna push the button to play again. The design is playful.
+
 ![restart](./assets/images/restart.png)
 
 
 
 * ### Features left to implement
- I would like to implement a featue what the player's as well as the computer's choice of rock, paper or scissors are, not just who wins. I also would work on my media queries to get the game to look better on bigger screens.
+ I would like to implement:
+  * a text saying what the user as well as the computer chose.
+  * music that plays during the game.
+  * a countdown for moves left.
 
 # Design<div id='id-design'>
 * ### Colours
-I used linear-gradient from blue to red to get the to get viewers' attention. I been trying to get good visibility using the contrast of the different colors so that the visually impaired can easily see everything that is written.
-I have also tried to make my page look happy by mixing the colors from my palette in a tasteful way.
+I've been trying to get good visibility using the contrast of the different colors so that the visually impaired can easily see everything that is written.
+I've been trying to make the websight look a bit like taken from the 80's game world with bright colors. The background is in different colors, blue, purple, black to stand in contrast with the chosen colors.
    
 * ### Colour Palette
-![palette](./assets/images/colors.png)
+![palette](./assets/images/colorpal.png)
 
 * ### Wireframes
-Wireframes were created for mobile and desktop.
+I created wireframes for mobile and desktop.
 To get an overview of how the page will look when it is finished.
 ![desctop](./assets/images/wireframes.png) 
 
@@ -154,7 +174,9 @@ To get an overview of how the page will look when it is finished.
 
 
 # Bugs<div id='id-bugs'>
+* ### Fixed Bugs 
    * I could not get the text for what the computer chose running so I removed the function.
+
 * ### Unfixed Bugs<div id='id-unfixed'>
    * I tried to add a favicon several times, but I couldn't get it right so I didn't use It.
    
