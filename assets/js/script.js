@@ -32,30 +32,23 @@ function theGame(playerChoice) {
 	
 	let compChoice = computerRandomChoice();
 	if (compChoice === 'rock' && playerChoice === 'paper') {
-		document.getElementById('info').innerHTML = "You coose paper & Computer choose rock!";
 		playerWin();
 	}
 	if (compChoice === 'paper' && playerChoice === 'scissors') {
-		document.getElementById('info').innerHTML = "You choose scissors & Computer choose paper!";
 		playerWin();
 	}
 	if (compChoice === 'scissors' && playerChoice === 'rock') {
-		document.getElementById('info').innerHTML = "You choose rock & Computer choose scissors!";
 		playerWin();
 	}
 	if (compChoice === 'paper' && playerChoice === 'rock') {
-		document.getElementById('info').innerHTML = "You choose rock & Computer choose paper!";
 		compWin();
 	}
 	if (compChoice === 'scissors' && playerChoice === 'paper') {
-		document.getElementById('info').innerHTML = "You choose paper & Computer choose scissors!";
 		compWin();
 	}
 	if (compChoice === 'rock' && playerChoice === 'scissors') {
-		document.getElementById('info').innerHTML = "You choose scissors & Computer choose rock!";
 		compWin();
 	} else if (compChoice === playerChoice) {
-		document.getElementById('info').innerHTML = "Ohh, Its a draw!";
 		draw();
 	}
 }

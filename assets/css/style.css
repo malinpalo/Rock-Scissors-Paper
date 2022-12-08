@@ -23,7 +23,7 @@ body {
 header {
     display: flex;
     padding-top: 2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
@@ -133,7 +133,7 @@ ul {
     border: 6px solid #FFE91F;
     border-radius: 1rem;
     background-color: #B534D2;
-    width: 11rem;
+    width: 8rem;
     margin: 0 auto;
     padding: 0.5rem;
     font-size: 2rem;
@@ -204,4 +204,59 @@ ul {
 #restart:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+/* For small screen sizes from 320px wide and up to 600px wide */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+
+    header {
+        font-size: 1rem;
+    }
+    .greeting-box {
+        width: 18rem;
+    }
+    #image-box {
+        font-size: 1rem;
+        padding: 1rem;
+        margin:0;
+    }
+    #image-box img {
+        height: 6rem;
+    }
+    .options {
+        height: 6rem;
+        width: 6rem;
+        border:2px solid #FFE91F;
+    }
+    #info {
+        font-size: 2rem;
+    }
+    #win-lose {
+        font-size: 2rem;
+    }
+    #start {
+        width: 12rem;
+        height: 5rem;
+    }
+
+    #box-win >p {
+            font-size: 2rem;
+            margin-top: 3rem;
+    }
+
+    #box-lose >p {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    #restart {
+        width: 11rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+    #image-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
 }
