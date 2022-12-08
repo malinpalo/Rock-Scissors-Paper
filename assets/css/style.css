@@ -22,36 +22,27 @@ body {
 /*Sets the header style*/
 header {
     display: flex;
-    margin-bottom: 10rem;
-    padding: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 8rem;
     justify-content: center;
     align-items: center;
-}
-
-header h1 {
-    font-size: 3rem;
-}
-
-section h2 {
-
+    font-size: 2rem;
 }
 /*Styles the main buttons of the game*/
 
 #image-box {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    padding-top: 10px;
-    height: 200px;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-top: 8rem;
+    width: 100%;
 }
 #image-box img {
-    height: 150px;
+    height: 11rem;
 }
 /*Styles the buttons that the player uses to play*/
 
 #r {
-    margin-right: 10px;
     display: none;
 }
 
@@ -61,7 +52,6 @@ section h2 {
 }
 
 #s {
-    margin-left: 10px;
     display: none;
 
 }
@@ -76,18 +66,19 @@ section h2 {
 }
 .options {
     padding-top: 20px;
-    background-color: #05258f;
+    background-color: #333234;
     height: 200px;
     width: 200px;
     padding-top: 1px;
-    border: 5px solid #ffffff;
+    border: 5px solid #FFE91F;
     cursor: pointer;
     border-radius: 15px;
+    transition: all 0.2s ease;
     }
     
 .options:hover {
         background-color:#333234;
-        transform: scale(1.1);
+        transform: scale(1.2);
         cursor: pointer;
     }
 /*Sets style to Welcome-area with rules that appeares before the game starts*/
@@ -115,27 +106,26 @@ ul {
 
 #box-lose {
     display: none;
-    margin-bottom: 50px;
+    justify-content: center;
+    background: none;
+    border: none;
 }
 #box-lose >p {
-    margin-top: 80px;
-    padding-left: 60px;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 7rem;
 }
 
 /*Sets style to the lose message that apperes if the player win*/ 
 
 #box-win {
     display: none;
-    margin-bottom: 50px;
+    justify-content: center;
+    background: none;
+    border: none;
 }
 
 
 #box-win >p {
-    margin-top: 80px;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 7rem;
 }
 
 
@@ -189,6 +179,11 @@ ul {
     background: #B534D2;
     border-radius: 0.5rem;
     margin: 0 auto;
+    cursor: pointer;
+}
+#start:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 /*Styles the button that restarts the game*/
@@ -215,6 +210,5 @@ ul {
 }
 #restart:hover {
     cursor: pointer;
-    background-color: aqua;
     transform: scale(1.1);
 }
