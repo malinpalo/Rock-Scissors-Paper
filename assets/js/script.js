@@ -92,7 +92,7 @@ function compWin() {
 }
 /** Function for when the start button is beeing clicked*/
 function startGame () {
-	
+	document.getElementById('score-box').style.display = "flex";
     document.getElementById('welcome-box').style.display = "none";
 	start.style.display = "none";
 	rock.style.display = "flex";

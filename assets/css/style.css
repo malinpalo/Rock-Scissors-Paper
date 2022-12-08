@@ -22,7 +22,7 @@ body {
 /*Sets the header style*/
 header {
     display: flex;
-    min-height: 15vh;
+    padding-top: 2rem;
     justify-content: center;
     align-items: center;
 }
