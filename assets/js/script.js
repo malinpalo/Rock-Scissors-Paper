@@ -93,6 +93,7 @@ function startGame () {
 	document.getElementById('score-box').style.display = "flex";
 	document.getElementById('game-area').style.display = "flex";
 	document.getElementById('info').innerHTML = "Choose a weapon!";
+	document.getElementById('mymusic').play();
 }
 
 /**Function that leaves a message if the player wins*/
@@ -124,3 +125,4 @@ document.getElementById('restart').addEventListener("click",function() {
     document.getElementById('restart').style.display = 'none';
  
 });
+
