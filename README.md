@@ -155,6 +155,7 @@ To get an overview of how the page will look when it is finished.
 
   * javaScript
     *  No errors where found when I tested the webpage on jshint. 
+    ![jshint](./assets/images/jshint.png)
 
 * ### Am I Responsive
   * To test my website on all iphone devices I used [am I responsive](https://ui.dev/amiresponsive?url=https://8000-malinpalo-rockscissorsp-ghb9wsgbskv.ws-eu77.gitpod.io/)
@@ -176,6 +177,7 @@ To get an overview of how the page will look when it is finished.
 # Bugs<div id='id-bugs'>
 * ### Fixed Bugs 
    * I could not get the text for what the computer chose running so I removed the function.
+   * Console error became present preventing execution of script code after the last tidy up, before deployment, where I removed some html code. I've solved that error by reinserting the code.
 
 * ### Unfixed Bugs<div id='id-unfixed'>
    * I tried to add a favicon several times, but I couldn't get it right so I didn't use It.
