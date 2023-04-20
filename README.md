@@ -19,7 +19,7 @@ This website was designed and developed as a game that can be enjoyed by players
     * [Losing text](#id-lose)
     * [Restart button](#id-restart)
 3. [Design](#id-design)
-4. [Technologies used](#id-tech)
+4. [Tools & Technologies used](#id-tech)
 5. [Testing](#id-testing) 
 6. [Validator Testing](#id-validator)
 7. [Bugs](#id-bugs)
@@ -104,20 +104,19 @@ When the game is over a bright colorful restart button appeares with a text aski
 * ### Features left to implement
  I would like to implement:
   * a text saying what the user as well as the computer chose.
-  * music that plays during the game.
+  * mute/unmute buttons for the music.
   * a countdown for moves left.
 
 # Design<div id='id-design'>
 * ### Colours
 I've been trying to get good visibility using the contrast of the different colors so that the visually impaired can easily see everything that is written.
-I've been trying to make the websight look a bit like taken from the 80's game world with bright colors. The background is in different colors, blue, purple, black to stand in contrast with the chosen colors.
+I've been trying to make the website look like taken straight from the 80's game world with bright colors. The background is in different colors, blue, purple, black to stand in contrast with the chosen colors.
    
 * ### Colour Palette
 ![palette](./assets/images/colorpal.png)
 
 * ### Wireframes
-I created wireframes for mobile and desktop.
-To get an overview of how the page will look when it is finished.
+I created wireframes for mobile and desktop, to get an overview of how the page will look when it is finished.
 ![desctop](./assets/images/wireframes.png) 
 
 
@@ -126,19 +125,23 @@ To get an overview of how the page will look when it is finished.
   [Pexels](https://www.pexels.com/) 
   [Vecteezy](https://www.vecteezy.com/anonymous/610fa46a-ea0a-4dfb-b5b8-cc753e2d4eb1/collections/224565/my-first-collection)
 
-* ### Typography
 
-  * The font chosen was Russo One for the whole page. Sans-serif where used for backup.
+* ### Typography
+  * [Google fonts](https://fonts.google.com) was used for fonts in the website.
+  * [Russo One](https://fonts.google.com/specimen/Russo+One?query=russo+one) was the main font used on the whole website. Sans-serif was used as backup.
+  * [Favicon](https://favicon.io/) was used to generate a favicon.
   
 
-# Technologies Used<div id='id-tech'>
- * HTML5
- * CSS3 
- * javaScript
- * Gitpod 
- * GitHub 
- * Google Fonts
- * Chrome dev tools
+# Tools & Technologies Used<div id='id-tech'>
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [JavaScript](https://www.javascript.com/) used for auto-closing the responsive burger menu.
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [Cubase](https://www.steinberg.net/cubase/) DAW used to edit audio.
 
 # Testing<div id='id-testing'>
 
@@ -177,10 +180,9 @@ To get an overview of how the page will look when it is finished.
 # Bugs<div id='id-bugs'>
 * ### Fixed Bugs 
    * I could not get the text for what the computer chose running so I removed the function.
-   * Console error became present preventing execution of script code after the last tidy up, before deployment, where I removed some html code. I've solved that error by reinserting the code.
+   * Console error became present preventing execution of script code after the last tidy up, before deployment, where I removed some html code. The function to se if the user won/lost and the restart button got broken and didn't show. I've solved that error by reinserting the code.
 
 * ### Unfixed Bugs<div id='id-unfixed'>
-   * I tried to add a favicon several times, but I couldn't get it right so I didn't use It.
    
 
 # Deployment<div id='id-deploy'>
@@ -195,6 +197,8 @@ The site was deployed to GitHub pages. The steps to deploy are as follow:
  
 
 # Credits<div id='id-credits'>
+  * For modern responsive layouts I used [Flexbox Froggy](https://flexboxfroggy.com/)
+  * To add audio [Stack Overflow](https://stackoverflow.com/questions/9419263/how-to-play-audio) 
   * When coding the project I used several tutorials on youtube for inspiration.
   * I took inspitation from [YouTube channel](https://www.youtube.com/watch?v=RwFeg0cEZvQ) 
   * An also from this video [YouTube channel](https://www.youtube.com/watch?v=1yS-JV4fWqY&t=429s) 
@@ -203,4 +207,5 @@ The site was deployed to GitHub pages. The steps to deploy are as follow:
 # Acknowledgments<div id='id-acknowledgements'>
    * The tutors from Code Institute and the slack community for help and and advice.
    * Code Institite course material.
+   * My cousin and family for the support.
     
