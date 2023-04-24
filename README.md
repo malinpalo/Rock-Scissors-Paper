@@ -104,7 +104,7 @@ When the game is over a bright colorful restart button appeares with a text aski
 ![restart](./assets/images/restart.png)
 
 * ### Background Music<div id='id-background-music'>
-Background music begins automatically when the user starts the game by clicking the start button. I chose not to let the music begin auto playing on first loading of the site as this can be disabled by certain browsers. The music is a bit uptempo and not too loud, to provide a simple background accompaniment which enhances the experience of playing the game.
+Background music begins automatically when the user starts the game by clicking the start button. I chose not to let the music begin auto playing on first loading of the site as this can be disabled by certain browsers. The music is relaxed and not too loud, to provide a simple background accompaniment which enhances the experience of playing the game.
 
 * ### The 404 error page <div id='id-404-error-page'>
 
@@ -153,7 +153,7 @@ I created wireframes for mobile and desktop, to get an overview of how the page 
 - [GitHub](https://github.com) used for secure online code storage.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
-- [Cubase](https://www.steinberg.net/cubase/) DAW used to edit audio.
+- [Pixabay](https://pixabay.com/music/) used to import free audio.
 
 # Testing<div id='id-testing'>
 
