@@ -1,6 +1,6 @@
 //**Declaring global variables to manipulate the DOM */
 const btns = document.getElementsByTagName('button');
-const start = document.getElementById('start')
+const start = document.getElementById('start');
 let rock = document.getElementById('r');
 let scissors = document.getElementById('s');
 let paper = document.getElementById('p');

@@ -6,7 +6,7 @@ This website was designed and developed as a game that can be enjoyed by players
 [Live link to the Website](https://malinpalo.github.io/Rock-Scissors-Paper/)
 
 # Table of Contents
-1. [User experience](#id-User-experience)
+1. [User experience](#id-user-experience)
 2. [Features](#id-features)
     * [The welcome page](#id=-welcome)
     * [Header and Title](#id-header)
@@ -29,7 +29,7 @@ This website was designed and developed as a game that can be enjoyed by players
 11. [Acknowledgements](#id-acknowledgements)
 
 
-# User experience<div id='id-User experience'>
+# User experience<div id='id-user experience'>
 
 ## User Stories
 
