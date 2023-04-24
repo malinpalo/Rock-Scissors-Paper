@@ -18,6 +18,10 @@ This website was designed and developed as a game that can be enjoyed by players
     * [Winning text](#id-win)
     * [Losing text](#id-lose)
     * [Restart button](#id-restart)
+    * [Background music](#id-background-music)
+    * [404 error page](#id-404-error-page)
+    * [Features left to implement](#id-features-left-to-implement)
+    
 3. [Design](#id-design)
 4. [Tools & Technologies used](#id-tech)
 5. [Testing](#id-testing) 
@@ -29,7 +33,7 @@ This website was designed and developed as a game that can be enjoyed by players
 11. [Acknowledgements](#id-acknowledgements)
 
 
-# User experience<div id='id-user experience'>
+# User experience<div id='id-user-experience'>
 
 ## User Stories
 
@@ -99,13 +103,21 @@ When the game is over a bright colorful restart button appeares with a text aski
 
 ![restart](./assets/images/restart.png)
 
+* ### Background Music<div id='id-background-music'>
+Background music begins automatically when the user starts the game by clicking the start button. I chose not to let the music begin auto playing on first loading of the site as this can be disabled by certain browsers. The music is a bit uptempo and not too loud, to provide a simple background accompaniment which enhances the experience of playing the game.
+
+* ### The 404 error page <div id='id-404-error-page'>
+
+The 404 error page displays a sorry message explaining to the user that there has been an error directing them to the page they were looking for.
+
+![404error](./assets/images/404error.png)
 
 
-* ### Features left to implement
- I would like to implement:
+* ### Features left to implement<div id='id-features-left-to-implement'>
   * a text saying what the user as well as the computer chose.
   * mute/unmute buttons for the music.
   * a countdown for moves left.
+  * buttons on 404 error page giving the user options to leave the game or to head back to start.
 
 # Design<div id='id-design'>
 * ### Colours
@@ -181,20 +193,15 @@ I created wireframes for mobile and desktop, to get an overview of how the page 
 * ### Fixed Bugs 
    * I could not get the text for what the computer chose running so I removed the function.
    * Console error became present preventing execution of script code after the last tidy up, before deployment, where I removed some html code. The function to se if the user won/lost and the restart button got broken and didn't show. I've solved that error by reinserting the code.
-
-* ### Unfixed Bugs<div id='id-unfixed'>
    
-
+  
 # Deployment<div id='id-deploy'>
-
 
 The site was deployed to GitHub pages. The steps to deploy are as follow:
 * In the Github repository, go to settings tab.
 * Navigate to Pages.
 * Under Source, select the branch to 'main', then click save.
 * The page will automatically be refreched and the link to your page appears to indicate the successful deployment!
-
- 
 
 # Credits<div id='id-credits'>
   * For modern responsive layouts I used [Flexbox Froggy](https://flexboxfroggy.com/)
